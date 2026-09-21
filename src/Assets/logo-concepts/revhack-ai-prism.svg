@@ -1,0 +1,13 @@
+<svg width="720" height="440" viewBox="0 0 720 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="440" rx="32" fill="#2F3F72"/>
+  <path d="M197 93L274 93L330 149L274 205H197V93Z" fill="#F7F1E7"/>
+  <path d="M197 205H246L330 301H267L197 232V205Z" fill="#FF4D08"/>
+  <path d="M350 93H398V169H458V93H506V301H458V217H398V301H350V93Z" fill="#F7F1E7"/>
+  <path d="M274 93L330 149L274 205L218 149L274 93Z" fill="#FFCB3D"/>
+  <path d="M274 205L330 261L274 317L218 261L274 205Z" fill="#FF4D08"/>
+  <path d="M302 177L330 149L358 177M302 233L330 261L358 233" stroke="#151515" stroke-width="7"/>
+  <path d="M537 130L564 157L537 184L510 157L537 130Z" fill="#FFCB3D"/>
+  <path d="M537 210L564 237L537 264L510 237L537 210Z" fill="#FF4D08"/>
+  <path d="M537 184V210" stroke="#F7F1E7" stroke-width="7"/>
+  <text x="360" y="386" text-anchor="middle" fill="#F7F1E7" font-family="Arial, sans-serif" font-size="21" font-weight="700" letter-spacing="7">PRISM WEAVE</text>
+</svg>

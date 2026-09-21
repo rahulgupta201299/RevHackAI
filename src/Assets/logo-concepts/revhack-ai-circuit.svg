@@ -1,0 +1,12 @@
+<svg width="720" height="440" viewBox="0 0 720 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="440" rx="32" fill="#F7F1E7"/>
+  <path d="M249 102L315 64L381 102V178L447 216V292L381 330L315 292V216L249 178V102Z" fill="#151515"/>
+  <path d="M268 113L315 86L362 113V158L315 185L268 158V113Z" fill="#F7F1E7"/>
+  <path d="M268 205L315 178L362 205V250L315 277L268 250V205Z" fill="#FF4D08"/>
+  <path d="M362 159L410 187V245L362 273V159Z" fill="#FFCB3D"/>
+  <path d="M315 185V277M268 205H362" stroke="#F7F1E7" stroke-width="13"/>
+  <circle cx="447" cy="216" r="18" fill="#FF4D08" stroke="#151515" stroke-width="8"/>
+  <circle cx="491" cy="216" r="9" fill="#2F3F72"/>
+  <path d="M465 216H482" stroke="#2F3F72" stroke-width="7"/>
+  <text x="360" y="386" text-anchor="middle" fill="#151515" font-family="Arial, sans-serif" font-size="21" font-weight="700" letter-spacing="7">CIRCUIT MONOGRAM</text>
+</svg>

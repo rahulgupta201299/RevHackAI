@@ -1,0 +1,15 @@
+<svg width="720" height="440" viewBox="0 0 720 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="440" rx="32" fill="#151515"/>
+  <g stroke="#45413C" stroke-width="2">
+    <path d="M142 58V330M204 58V330M266 58V330M328 58V330M390 58V330M452 58V330M514 58V330M576 58V330"/>
+    <path d="M142 58H576M142 120H576M142 182H576M142 244H576M142 306H576"/>
+  </g>
+  <path d="M172 90H263L294 121V183L263 214H172V90Z" fill="#F7F1E7"/>
+  <path d="M202 121H250L263 134V170L250 183H202V121Z" fill="#151515"/>
+  <path d="M172 214H216L294 306H239L172 232V214Z" fill="#FF4D08"/>
+  <path d="M343 90H388V168H451V90H496V306H451V212H388V306H343V90Z" fill="#F7F1E7"/>
+  <path d="M526 119L554 148L526 177L498 148L526 119Z" fill="#FFCB3D"/>
+  <path d="M526 211L554 240L526 269L498 240L526 211Z" fill="#FF4D08"/>
+  <path d="M526 177V211" stroke="#F7F1E7" stroke-width="7"/>
+  <text x="360" y="386" text-anchor="middle" fill="#F7F1E7" font-family="Arial, sans-serif" font-size="21" font-weight="700" letter-spacing="7">MODULAR GRID</text>
+</svg>
