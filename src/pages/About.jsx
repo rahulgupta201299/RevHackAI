@@ -30,7 +30,11 @@ export default function About() {
             >
               LinkedIn ↗
             </a>
-            <a href="https://www.instagram.com/rahul_3539/" rel="noreferrer" target="_blank">
+            <a
+              href="https://www.instagram.com/rahulverse.diaries/"
+              rel="noreferrer"
+              target="_blank"
+            >
               Instagram ↗
             </a>
           </Box>
