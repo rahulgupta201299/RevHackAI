@@ -1868,7 +1868,7 @@ button,
   }
   .appbar nav,
   .navButton {
-    display: none;
+    display: none !important;
   }
   .menuToggle {
     border: 2px solid #151515 !important;
