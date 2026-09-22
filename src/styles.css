@@ -1287,6 +1287,16 @@ button,
   aspect-ratio: 16 / 10.5;
   border-bottom: 3px solid #151515;
 }
+.liveSitePreview {
+  background: #fff;
+  border: 0;
+  height: calc(100% - 39px);
+  left: 0;
+  position: absolute;
+  top: 39px;
+  width: 100%;
+  z-index: 1;
+}
 .browserChrome {
   background: #fffdf9;
   height: 39px;
@@ -1306,12 +1316,14 @@ button,
   box-shadow: 3px 3px 0 #151515;
   right: 18px;
   top: 54px;
+  z-index: 3;
 }
 .previewOpenButton {
   bottom: 18px;
   box-shadow: 3px 3px 0 #151515;
   right: 18px;
   transition: transform 180ms ease !important;
+  z-index: 3;
 }
 .previewOpenButton:hover {
   transform: translate(-2px, -2px);

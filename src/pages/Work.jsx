@@ -31,6 +31,12 @@ function WorkCard({ project }) {
           <span />
           <Typography>{project.url.replace('https://', '').replace('/', '')}</Typography>
         </Box>
+        <iframe
+          className="liveSitePreview"
+          loading="lazy"
+          src={project.url}
+          title={`${project.name} live website preview`}
+        />
         <Typography className="projectCategory">{project.category}</Typography>
         <Button
           aria-label={`Open ${project.name} in a new tab`}
