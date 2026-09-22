@@ -1,8 +1,6 @@
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { Box, Button, Card, CardContent, Container, Grid, Typography } from '@mui/material';
-import medraFinvestPreview from '../Assets/medra-finvest.png';
-import zanaMotorcyclesPreview from '../Assets/zana-motorcycles.png';
 
 const projects = [
   {
@@ -11,7 +9,6 @@ const projects = [
     description:
       'Premium motorcycle-accessories store with a custom admin portal for orders, source tracking and revenue visibility.',
     deliverables: ['Storefront experience', 'Operations dashboard'],
-    image: zanaMotorcyclesPreview,
     url: 'https://www.zanamotorcycles.com/',
   },
   {
@@ -20,7 +17,6 @@ const projects = [
     description:
       'Financial products website with email, WhatsApp and spreadsheet-driven workflows for quicker lead handling.',
     deliverables: ['Lead automation', 'Spreadsheet sync'],
-    image: medraFinvestPreview,
     url: 'https://medrafin.in/',
   },
 ];
@@ -35,11 +31,6 @@ function WorkCard({ project }) {
           <span />
           <Typography>{project.url.replace('https://', '').replace('/', '')}</Typography>
         </Box>
-        <img
-          alt={`${project.name} website preview`}
-          className="previewImage visible"
-          src={project.image}
-        />
         <Typography className="projectCategory">{project.category}</Typography>
         <Button
           aria-label={`Open ${project.name} in a new tab`}

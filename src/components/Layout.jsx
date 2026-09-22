@@ -5,7 +5,7 @@ const links = [
   ['Services', '/services'],
   ['Work', '/work'],
   ['Why us', '/why'],
-  ['About', '/about'],
+  // ['About', '/about'],
 ];
 export default function Layout() {
   return (
