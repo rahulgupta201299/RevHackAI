@@ -5,29 +5,32 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@emotion/react": "latest",
-    "@emotion/styled": "latest",
-    "@mui/icons-material": "latest",
-    "@mui/material": "latest",
-    "framer-motion": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-router-dom": "latest",
-    "vite": "latest"
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/space-grotesk": "^5.3.0",
+    "@mui/icons-material": "^9.4.0",
+    "@mui/material": "^9.4.0",
+    "framer-motion": "^13.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.0",
-    "eslint": "^9.39.0",
-    "eslint-config-prettier": "latest",
-    "eslint-plugin-react": "latest",
-    "eslint-plugin-react-hooks": "latest",
-    "eslint-plugin-react-refresh": "latest",
-    "globals": "latest",
-    "prettier": "latest"
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.8",
+    "vite": "^8.3.0"
   }
 }
