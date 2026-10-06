@@ -4,9 +4,9 @@
 export const site = {
   brand: 'RevHack AI',
   tagline: 'AI-first product engineering studio',
-  url: 'https://revhack.vercel.app',
+  url: 'https://revhackai.in',
   // Used by the contact form (opens the visitor's email app). Not displayed on the page.
-  contactEmail: 'rahulgupta201299@gmail.com',
+  contactEmail: 'rahul@revhackai.in',
   availability: 'Taking on new projects',
   responseTime: 'Replies within one working day',
 };

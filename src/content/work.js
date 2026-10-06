@@ -24,17 +24,17 @@ export const clientProjects = [
 
 export const caseStudy = {
   client: 'Zana Motorcycles',
-  period: '1 Apr — 22 Sep 2026',
+  period: '1 Apr — 6 Oct 2026',
   metrics: [
-    { value: '2,331', label: 'Overall orders' },
-    { value: '₹90.60L', label: 'Revenue tracked' },
-    { value: '₹3,887', label: 'Average order value' },
+    { value: '2,611', label: 'Overall orders' },
+    { value: '₹1.02Cr', label: 'Revenue tracked' },
+    { value: '₹3,920', label: 'Average order value' },
     { value: '91%', label: 'Organic orders' },
   ],
   sources: [
-    { label: 'Organic', orders: '2,126', revenue: '₹79.32L', share: 91, tone: 'primary' },
-    { label: 'Admin-assisted', orders: '205', revenue: '₹11.28L', share: 9, tone: 'secondary' },
+    { label: 'Organic', orders: '2,369', revenue: '₹88.55L', share: 91, tone: 'primary' },
+    { label: 'Admin-assisted', orders: '242', revenue: '₹13.80L', share: 9, tone: 'secondary' },
   ],
-  total: { orders: '2,331', revenue: '₹90.60L' },
-  payments: { online: 1928, cod: 403 },
+  total: { orders: '2,611', revenue: '₹1.02Cr' },
+  payments: { online: 2160, cod: 451 },
 };
