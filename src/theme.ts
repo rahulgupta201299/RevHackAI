@@ -2,7 +2,7 @@ import { createTheme, type Theme } from '@mui/material/styles';
 
 /**
  * Design system. All colours, typography and component styles live here.
- * Custom palette keys (accent, surface, line, inverse, chart, shadow) become CSS
+ * Custom palette keys (accent, surface, line, inverse, chart, series, shadow) become CSS
  * variables, so they switch automatically between light and dark mode and can be used in
  * `sx` as strings, e.g. `color: 'accent.text'`, `bgcolor: 'surface.alt'`.
  */
@@ -37,6 +37,8 @@ const lightPalette = {
   line: { strong: '#cfccc4', grid: 'rgba(17, 17, 19, 0.06)' },
   inverse: { bg: '#111113', text: '#fafaf7', muted: '#b4b4bb' },
   chart: { primary: '#ff4d08', secondary: '#2563eb' },
+  // Categorical series (validated for colour-vision deficiency), fixed order: blue, orange, aqua.
+  series: { one: '#2a78d6', two: '#eb6834', three: '#1baf7a' },
   shadow: { soft: 'rgba(17, 17, 19, 0.05)', strong: 'rgba(17, 17, 19, 0.25)' },
 };
 
@@ -52,6 +54,7 @@ const darkPalette = {
   line: { strong: '#3a3a42', grid: 'rgba(255, 255, 255, 0.05)' },
   inverse: { bg: '#f2f1ee', text: '#111113', muted: '#4b4b52' },
   chart: { primary: '#ff6a2b', secondary: '#7aa2ff' },
+  series: { one: '#3987e5', two: '#d95926', three: '#199e70' },
   shadow: { soft: 'rgba(0, 0, 0, 0.4)', strong: 'rgba(0, 0, 0, 0.7)' },
 };
 

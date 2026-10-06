@@ -1,3 +1,5 @@
+import type { StaticImageData } from 'next/image';
+
 /** Shared content types. Every content file is plain data typed against these. */
 export type IconKey =
   | 'ai'
@@ -35,14 +37,6 @@ export interface Job {
   mode: string;
   summary: string;
   highlights: string[];
-}
-
-export interface EnterpriseProject {
-  title: string;
-  client: string;
-  description: string;
-  outcome: string;
-  tags: string[];
 }
 
 export interface SkillGroup {
@@ -88,28 +82,39 @@ export interface SeniorCard {
   copy: string;
 }
 
-export type ProjectTone = 'ember' | 'ocean';
+export type ProjectCategory = 'ecommerce' | 'financial' | 'banking' | 'media';
 
-export interface ClientProject {
+export type ProjectPreview =
+  /** A tall full-page screenshot that scrolls inside a browser frame. */
+  | { type: 'scroll'; image: StaticImageData; alt: string }
+  /** A few app screens shown as a crossfading slideshow. */
+  | { type: 'slides'; slides: { image: StaticImageData; caption: string; alt: string }[] }
+  /** Work under NDA: no screenshots, a placeholder instead. */
+  | { type: 'confidential' };
+
+export interface Project {
+  slug: string;
   name: string;
-  category: string;
+  category: ProjectCategory;
+  /** Short project type, e.g. "Full-stack e-commerce". */
+  kind: string;
+  badge?: string;
   description: string;
   deliverables: string[];
-  url: string;
-  tone: ProjectTone;
+  url?: string;
+  /** One headline result shown on the card, e.g. { value: '₹1Cr+', label: 'revenue processed' }. */
+  highlight?: { value: string; label: string };
+  preview: ProjectPreview;
 }
 
-export interface CaseStudy {
-  client: string;
-  period: string;
-  metrics: Stat[];
-  sources: {
-    label: string;
-    orders: string;
-    revenue: string;
-    share: number;
-    tone: 'primary' | 'secondary';
-  }[];
-  total: { orders: string; revenue: string };
-  payments: { online: number; cod: number };
+/** Baselines for the simulated live dashboard (never real client data). */
+export interface LiveDemo {
+  title: string;
+  note: string;
+  hourly: number[];
+  averageOrderValue: number;
+  visitors: number;
+  sources: { label: string; share: number }[];
+  products: string[];
+  cities: string[];
 }

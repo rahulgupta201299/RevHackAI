@@ -6,7 +6,7 @@ export const contentType = ogContentType;
 
 export default function Image() {
   return renderOgImage({
-    eyebrow: 'Case studies',
-    title: '₹1.02Cr in revenue running on a store we built.',
+    eyebrow: 'Portfolio',
+    title: '₹1Cr+ in revenue on a store we built — and more, live.',
   });
 }

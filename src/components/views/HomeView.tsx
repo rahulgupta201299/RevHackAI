@@ -6,14 +6,13 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { homeFaqs } from '../../content/home';
 import { services } from '../../content/services';
-import { clientProjects } from '../../content/work';
 import CtaBanner from '../sections/CtaBanner';
 import FaqList from '../sections/FaqList';
 import Hero from '../sections/Hero';
 import ProblemsGrid from '../sections/ProblemsGrid';
 import ProcessSteps from '../sections/ProcessSteps';
-import ProjectCard from '../sections/ProjectCard';
-import ResultsHighlight from '../sections/ResultsHighlight';
+import LiveShowcase from '../sections/LiveShowcase';
+import ProjectsGrid from '../sections/ProjectsGrid';
 import SeniorLed from '../sections/SeniorLed';
 import ServiceCard from '../sections/ServiceCard';
 import Stack3D from '../sections/Stack3D';
@@ -52,23 +51,25 @@ export default function HomeView() {
       <Section
         id="results"
         alt
-        eyebrow="Proven results"
-        title="Real numbers from a product we built."
+        eyebrow="Portfolio"
+        title="Products we’ve built, live in production."
+        intro="Retail, financial services, banking and AI — hover a preview to scroll through the real site."
+        action={<SectionLink href="/work">All work</SectionLink>}
         sx={{ scrollMarginTop: 72 }}
       >
-        <ResultsHighlight />
-        <CardGrid columns={{ xs: 1, md: 2 }} gap={3} sx={{ mt: { xs: 6, md: 8 } }}>
-          {clientProjects.map((project, index) => (
-            <Reveal key={project.name} delay={index * 0.08}>
-              <Tilt3D max={4} sx={{ borderRadius: '24px' }}>
-                <ProjectCard project={project} />
-              </Tilt3D>
-            </Reveal>
-          ))}
-        </CardGrid>
+        <ProjectsGrid filterable />
       </Section>
 
       <Section
+        eyebrow="See it live"
+        title="Dashboards that show what drives revenue."
+        intro="A real-time view of orders, payments and traffic sources — ticking away with demo data."
+      >
+        <LiveShowcase />
+      </Section>
+
+      <Section
+        alt
         eyebrow="What we do"
         title="Everything your product needs, from first commit to production."
         intro="One partner for websites, apps, backend, cloud and AI — so nothing gets lost between hand-offs."
@@ -86,7 +87,6 @@ export default function HomeView() {
       </Section>
 
       <Section
-        alt
         eyebrow="End-to-end"
         title="Every layer of your product. One partner."
         intro="Scroll to pull the stack apart — hover a layer to see what goes into it."
@@ -94,12 +94,11 @@ export default function HomeView() {
         <Stack3D />
       </Section>
 
-      <Section>
+      <Section alt>
         <SeniorLed />
       </Section>
 
       <Section
-        alt
         eyebrow="How we work"
         title="Discover, build, deploy — then scale."
         intro="A clear, four-step path from idea to a product that grows with your business."
@@ -108,6 +107,7 @@ export default function HomeView() {
       </Section>
 
       <Section
+        alt
         eyebrow="Questions"
         title="What clients ask before we start."
         action={<SectionLink href="/why">Why teams choose us</SectionLink>}

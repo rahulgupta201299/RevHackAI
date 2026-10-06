@@ -45,9 +45,9 @@ export const seniorCards: SeniorCard[] = [
   },
   {
     icon: 'layers',
-    value: '3',
-    title: 'Enterprise banking platforms',
-    copy: 'Account onboarding, investments and payments journeys delivered end to end.',
+    value: 'Bank-grade',
+    title: 'Enterprise banking experience',
+    copy: 'Regulated, high-traffic customer journeys — built to the security bar banks demand.',
   },
   {
     icon: 'key',

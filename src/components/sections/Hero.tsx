@@ -396,7 +396,7 @@ export default function Hero() {
                 color: 'accent.text',
               }}
             >
-              ₹1.02Cr
+              ₹1Cr+
             </Typography>
             <Typography
               variant="body2"

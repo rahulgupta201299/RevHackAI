@@ -9,6 +9,7 @@ interface CustomPaletteKeys {
   line: { strong: string; grid: string };
   inverse: { bg: string; text: string; muted: string };
   chart: { primary: string; secondary: string };
+  series: { one: string; two: string; three: string };
   shadow: { soft: string; strong: string };
 }
 

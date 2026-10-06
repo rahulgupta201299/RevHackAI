@@ -3,11 +3,16 @@ import WorkView from '@/components/views/WorkView';
 import { breadcrumbJsonLd, pageMetadata } from '@/lib/seo';
 
 export const metadata = pageMetadata({
-  title: 'Case Studies: ₹1Cr+ E-commerce Results',
+  title: 'Portfolio: E-commerce, Fintech, Banking & AI Projects',
   description:
-    'Client work and results: an e-commerce store and admin portal tracking ₹1.02Cr in revenue, AI-automated lead handling and enterprise banking journeys.',
+    'Live projects by industry: a full-stack e-commerce store that has processed ₹1Cr+ in revenue, a fixed-income investment website with AI lead automation, an AI-powered 3D book library and enterprise banking work.',
   path: '/work',
-  keywords: ['e-commerce case study', 'web development portfolio', 'fintech development'],
+  keywords: [
+    'web development portfolio',
+    'e-commerce development',
+    'fintech website',
+    '3D web app',
+  ],
 });
 
 export default function WorkPage() {

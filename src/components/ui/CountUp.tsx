@@ -7,7 +7,7 @@ import { visuallyHidden } from './visuallyHidden';
 
 /**
  * Counts the first number inside `value` up from zero when it scrolls into view,
- * keeping any prefix/suffix (e.g. "₹1.02Cr", "2,611", "91%"). Screen readers get the final text.
+ * keeping any prefix/suffix (e.g. "₹4.5L", "2,400", "91%"). Screen readers get the final text.
  */
 export default function CountUp({ value, duration = 1.6 }: { value: string; duration?: number }) {
   const ref = useRef<HTMLSpanElement>(null);

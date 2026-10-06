@@ -1,14 +1,9 @@
 'use client';
 
-import { enterpriseProjects } from '../../content/profile';
-import { clientProjects } from '../../content/work';
 import CtaBanner from '../sections/CtaBanner';
-import EnterpriseProjectCard from '../sections/EnterpriseProjectCard';
-import ProjectCard from '../sections/ProjectCard';
-import ResultsDashboard from '../sections/ResultsDashboard';
-import CardGrid from '../ui/CardGrid';
+import LiveShowcase from '../sections/LiveShowcase';
+import ProjectsGrid from '../sections/ProjectsGrid';
 import PageHeader from '../ui/PageHeader';
-import Reveal from '../ui/Reveal';
 import Section from '../ui/Section';
 
 export default function WorkView() {
@@ -17,43 +12,23 @@ export default function WorkView() {
       <PageHeader
         eyebrow="Work"
         title="Built, shipped and running in production."
-        intro="Client products for growing businesses and enterprise platforms used by bank customers every day."
+        intro="Products across retail, financial services, banking and AI. Hover a preview to scroll through the live site, or filter by industry."
       />
 
-      <Section eyebrow="Client projects" title="Products for growing businesses">
-        <CardGrid columns={{ xs: 1, md: 2 }} gap={3}>
-          {clientProjects.map((project, index) => (
-            <Reveal key={project.name} delay={index * 0.08}>
-              <ProjectCard project={project} />
-            </Reveal>
-          ))}
-        </CardGrid>
+      <Section eyebrow="Portfolio" title="Projects by industry">
+        <ProjectsGrid filterable />
       </Section>
 
       <Section
         alt
-        eyebrow="Case study"
-        title="₹1.02Cr in revenue, tracked in one place."
-        intro="The storefront and admin portal we built for Zana Motorcycles give the team a live view of orders, sources and payments."
+        eyebrow="Live demo"
+        title="What our e-commerce admin portals look like."
+        intro="Orders, revenue, visitors and traffic sources updating in real time. Figures are simulated to keep client data private."
       >
-        <ResultsDashboard />
+        <LiveShowcase />
       </Section>
 
-      <Section
-        eyebrow="Enterprise"
-        title="Banking platforms at scale"
-        intro="Customer journeys delivered for a leading private-sector bank — secure, compliant and high-traffic."
-      >
-        <CardGrid>
-          {enterpriseProjects.map((project, index) => (
-            <Reveal key={project.title} delay={index * 0.06}>
-              <EnterpriseProjectCard project={project} />
-            </Reveal>
-          ))}
-        </CardGrid>
-      </Section>
-
-      <CtaBanner title="Want results like these?" />
+      <CtaBanner title="Want a product like these?" />
     </>
   );
 }

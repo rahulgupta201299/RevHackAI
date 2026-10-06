@@ -1,4 +1,4 @@
-import type { EnterpriseProject, Job, SkillGroup, StackLayer, Stat } from './types';
+import type { Job, SkillGroup, StackLayer, Stat } from './types';
 
 /**
  * Engineering profile. Personal details (name, phone, location, employer and client names)
@@ -15,10 +15,10 @@ export const profile = {
 };
 
 export const stats: Stat[] = [
-  { value: '₹1.02Cr', label: 'Client revenue running on our builds' },
-  { value: '2,611', label: 'Orders processed on a store we built' },
-  { value: '3', label: 'Enterprise banking platforms delivered' },
+  { value: '₹1Cr+', label: 'Revenue processed on a store we built' },
+  { value: '3', label: 'Products live in production' },
   { value: '4+', label: 'Years shipping production software' },
+  { value: '100%', label: 'Code & cloud owned by our clients' },
 ];
 
 /** The end-to-end stack shown on Home and Services. */
@@ -77,36 +77,9 @@ export const experience: Job[] = [
     highlights: [
       'Ship full-stack products end to end: frontend, Node.js APIs, databases, CI/CD and monitoring.',
       'Provision AWS infrastructure from scratch — compute, storage, CDN, DNS, SSL and autoscaling.',
-      'Built an e-commerce platform with a custom admin portal tracking ₹1Cr+ in revenue.',
+      'Built an e-commerce platform with a custom admin portal for orders, payments and traffic sources.',
       'Integrated AI and automation — email, WhatsApp and spreadsheet workflows — to remove manual follow-up.',
     ],
-  },
-];
-
-export const enterpriseProjects: EnterpriseProject[] = [
-  {
-    title: 'Digital Savings Account Onboarding',
-    client: 'Leading private-sector bank',
-    description:
-      'End-to-end onboarding journeys for Savings, Salary and NRI banking products — online account opening with eKYC, video KYC and integrated payments.',
-    outcome: 'Customers complete account opening within minutes.',
-    tags: ['Full-stack journeys', 'eKYC / vKYC', 'Payments', 'API integration'],
-  },
-  {
-    title: 'Digital Gold & NPS Investments',
-    client: 'Leading private-sector bank',
-    description:
-      'Investment platforms that let customers buy digital gold and invest in the National Pension Scheme through an intuitive interface.',
-    outcome: 'Complex financial products turned into clear, guided flows.',
-    tags: ['Investment UX', 'Secure transactions', 'API integration'],
-  },
-  {
-    title: 'Personalised agent sourcing links',
-    client: 'Leading private-sector bank',
-    description:
-      'A platform for sales agents to share user-specific, unique sourcing links with prospective customers.',
-    outcome: 'Traceable, personalised acquisition links for every agent.',
-    tags: ['Link generation', 'Sales tooling', 'Attribution'],
   },
 ];
 
