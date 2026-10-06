@@ -58,14 +58,17 @@ export default function Experience() {
         <SkillGroups />
       </Section>
 
-      <Section eyebrow="Credentials" title="Education & recognition">
+      <Section
+        eyebrow="Credentials"
+        title={recognition.length ? 'Education & recognition' : 'Education'}
+      >
         <CardGrid columns={{ xs: 1, md: 2 }}>
           <Reveal>
             <Credential
               icon="education"
               label="Education"
               title={education.degree}
-              detail={`${education.institution} · ${education.period}`}
+              detail={[education.institution, education.period].filter(Boolean).join(' · ')}
             />
           </Reveal>
           {recognition.map((award) => (

@@ -13,10 +13,10 @@ export const profile = {
 };
 
 export const stats = [
-  { value: '4+', label: 'Years shipping production software' },
-  { value: '2–4×', label: 'Growth our systems are built to support' },
-  { value: '₹90L+', label: 'Client revenue running on our builds' },
+  { value: '₹1.02Cr', label: 'Client revenue running on our builds' },
+  { value: '2,611', label: 'Orders processed on a store we built' },
   { value: '3', label: 'Enterprise banking platforms delivered' },
+  { value: '4+', label: 'Years shipping production software' },
 ];
 
 /** The end-to-end stack shown on Home and Services. */
@@ -52,7 +52,7 @@ export const experience = [
   {
     role: 'Senior Software Engineer',
     company: 'Fintech payments company',
-    period: 'Jul 2022 — Present',
+    period: '4+ years · Present',
     mode: 'Remote',
     summary:
       'Leading engineering across multiple fintech products — architecture, performance, security and delivery for high-traffic customer journeys.',
@@ -75,7 +75,7 @@ export const experience = [
     highlights: [
       'Ship full-stack products end to end: frontend, Node.js APIs, databases, CI/CD and monitoring.',
       'Provision AWS infrastructure from scratch — compute, storage, CDN, DNS, SSL and autoscaling.',
-      'Built an e-commerce platform with a custom admin portal tracking ₹90L+ in revenue.',
+      'Built an e-commerce platform with a custom admin portal tracking ₹1Cr+ in revenue.',
       'Integrated AI and automation — email, WhatsApp and spreadsheet workflows — to remove manual follow-up.',
     ],
   },
@@ -99,7 +99,7 @@ export const enterpriseProjects = [
     tags: ['Investment UX', 'Secure transactions', 'API integration'],
   },
   {
-    title: 'One Customer One QR',
+    title: 'Personalised agent sourcing links',
     client: 'Leading private-sector bank',
     description:
       'A platform for sales agents to share user-specific, unique sourcing links with prospective customers.',
@@ -138,9 +138,7 @@ export const skillGroups = [
 export const education = {
   degree: "Bachelor's degree",
   institution: 'Premier engineering institute, India',
-  period: '2018 — 2022',
 };
 
-export const recognition = [
-  { title: 'Annual “Warrior” award for engineering impact', year: '2025' },
-];
+/** Awards are left out on purpose: they would identify the employer. Add items as { title, year }. */
+export const recognition = [];

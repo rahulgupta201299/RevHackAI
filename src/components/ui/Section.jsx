@@ -11,12 +11,13 @@ import Reveal from './Reveal';
  * Page section with an optional heading block.
  * `alt` uses the alternate surface colour to separate adjacent sections.
  */
-export default function Section({ eyebrow, title, intro, action, alt = false, sx, children }) {
+export default function Section({ id, eyebrow, title, intro, action, alt = false, sx, children }) {
   const headingId = useId();
 
   return (
     <Box
       component="section"
+      id={id}
       aria-labelledby={title ? headingId : undefined}
       sx={mergeSx(
         [

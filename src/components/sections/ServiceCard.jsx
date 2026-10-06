@@ -9,10 +9,13 @@ export default function ServiceCard({ service, compact = false }) {
     <SurfaceCard
       interactive
       component="article"
-      sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}
+      sx={{ display: 'flex', flexDirection: 'column', gap: 2, overflow: 'visible' }}
     >
-      <IconTile icon={service.icon} />
-      <Box>
+      {/* data-depth layers lift off the card when it sits inside <Tilt3D>. */}
+      <Box data-depth="3" sx={{ width: 'fit-content' }}>
+        <IconTile icon={service.icon} />
+      </Box>
+      <Box data-depth="1">
         <Typography variant="h3">{service.title}</Typography>
         <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
           {service.summary}

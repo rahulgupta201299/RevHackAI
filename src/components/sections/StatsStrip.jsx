@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { stats } from '../../content/profile';
 import { fonts } from '../../theme';
+import CountUp from '../ui/CountUp';
 import Reveal from '../ui/Reveal';
 
 export default function StatsStrip({ items = stats }) {
@@ -56,7 +57,7 @@ export default function StatsStrip({ items = stats }) {
                   lineHeight: 1,
                 }}
               >
-                {stat.value}
+                <CountUp value={stat.value} />
               </Box>
             </Reveal>
           ))}

@@ -3,11 +3,12 @@
  */
 export const site = {
   brand: 'RevHack AI',
-  tagline: 'AI-first product engineering studio',
+  tagline: 'Build & launch your product without hiring a tech team',
   url: 'https://revhackai.in',
   // Used by the contact form (opens the visitor's email app). Not displayed on the page.
   contactEmail: 'rahul@revhackai.in',
   availability: 'Taking on new projects',
+  primaryCta: 'Book a free 30-min call',
   responseTime: 'Replies within one working day',
 };
 

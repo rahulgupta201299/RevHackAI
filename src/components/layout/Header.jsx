@@ -10,7 +10,7 @@ import Toolbar from '@mui/material/Toolbar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { useState } from 'react';
 import { Link as RouterLink, NavLink } from 'react-router-dom';
-import { navLinks } from '../../content/site';
+import { navLinks, site } from '../../content/site';
 import { fonts } from '../../theme';
 import BrandLogo from './BrandLogo';
 import ThemeToggle from './ThemeToggle';
@@ -71,7 +71,7 @@ export default function Header() {
               size="small"
               sx={{ display: { xs: 'none', sm: 'inline-flex' } }}
             >
-              Start a project
+              Book a free call
             </Button>
             <IconButton
               aria-label="Open menu"
@@ -137,7 +137,7 @@ export default function Header() {
           onClick={close}
           sx={{ mt: 4 }}
         >
-          Start a project
+          {site.primaryCta}
         </Button>
       </Drawer>
     </AppBar>

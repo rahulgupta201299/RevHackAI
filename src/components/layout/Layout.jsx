@@ -5,11 +5,13 @@ import { Outlet } from 'react-router-dom';
 import Footer from './Footer';
 import Header from './Header';
 import ScrollManager from './ScrollManager';
+import ScrollProgress from './ScrollProgress';
 
 export default function Layout() {
   return (
     <>
       <ScrollManager />
+      <ScrollProgress />
       <Box
         component="a"
         href="#main"

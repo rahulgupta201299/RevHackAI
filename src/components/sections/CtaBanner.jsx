@@ -6,11 +6,12 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { Link as RouterLink } from 'react-router-dom';
 import { site } from '../../content/site';
+import Cube3D from '../ui/Cube3D';
 import Reveal from '../ui/Reveal';
 
 export default function CtaBanner({
   title = 'Have a product to build, ship or scale?',
-  copy = 'Tell us where you are today. We’ll map the fastest path to a secure, production-ready product on AWS — built to grow with you.',
+  copy = 'Book a free 30-minute call. You’ll leave with a clear plan, a realistic timeline and an estimate — no obligation.',
   secondary = { label: 'See our services', to: '/services' },
 }) {
   return (
@@ -39,6 +40,17 @@ export default function CtaBanner({
             },
           }}
         >
+          <Cube3D
+            size={190}
+            sx={{
+              display: { xs: 'none', lg: 'block' },
+              position: 'absolute',
+              right: { lg: 110 },
+              top: '50%',
+              mt: '-95px',
+              zIndex: -1,
+            }}
+          />
           <Typography id="cta-title" variant="h2" sx={{ maxWidth: '36rem' }}>
             {title}
           </Typography>
@@ -58,7 +70,7 @@ export default function CtaBanner({
               size="large"
               endIcon={<ArrowForwardRounded />}
             >
-              Start a project
+              {site.primaryCta}
             </Button>
             {secondary && (
               <Button

@@ -19,6 +19,7 @@ function Preview({ tone }) {
   return (
     <Box
       aria-hidden="true"
+      data-depth="2"
       sx={{
         m: 1.5,
         mb: 0,
@@ -58,7 +59,7 @@ export default function ProjectCard({ project }) {
     <SurfaceCard
       interactive
       component="article"
-      sx={{ p: 0, display: 'flex', flexDirection: 'column' }}
+      sx={{ p: 0, display: 'flex', flexDirection: 'column', overflow: 'visible' }}
     >
       <Preview tone={project.tone} />
       <Box

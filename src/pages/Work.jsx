@@ -36,7 +36,7 @@ export default function Work() {
       <Section
         alt
         eyebrow="Case study"
-        title="₹90L+ in revenue, tracked in one place."
+        title="₹1.02Cr in revenue, tracked in one place."
         intro="The storefront and admin portal we built for Zana Motorcycles give the team a live view of orders, sources and payments."
       >
         <ResultsDashboard />
