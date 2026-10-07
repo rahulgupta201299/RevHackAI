@@ -1,6 +1,7 @@
 import arcanumBook from '@/assets/previews/arcanum.webp';
 import arcanumHall from '@/assets/previews/arcanum-hall.webp';
 import arcanumLanding from '@/assets/previews/arcanum-landing.webp';
+import kilnFull from '@/assets/previews/kiln-full.webp';
 import medraFull from '@/assets/previews/medra-full.webp';
 import zanaFull from '@/assets/previews/zana-full.webp';
 import type { LiveDemo, Project, ProjectCategory } from './types';
@@ -19,6 +20,7 @@ export const projectCategories: { id: ProjectCategory | 'all'; label: string }[]
   { id: 'ecommerce', label: 'E-commerce & retail' },
   { id: 'financial', label: 'Financial services' },
   { id: 'banking', label: 'Banking' },
+  { id: 'creative', label: 'Arts & creative' },
   { id: 'media', label: 'Books, media & AI' },
 ];
 
@@ -65,6 +67,17 @@ export const projects: Project[] = [
         },
       ],
     },
+  },
+  {
+    slug: 'kiln',
+    name: 'KILN Collective',
+    category: 'creative',
+    kind: '3D website · studio booking & artist roster',
+    description:
+      'Website for a Mumbai studio space and artist collective: an interactive 3D hero with draggable artworks, bookable rooms with hourly rates, a browsable artist roster and a brief-to-booking enquiry flow.',
+    deliverables: ['Interactive 3D hero', 'Room booking pages', 'Artist roster & profiles'],
+    url: 'https://kiln-artist-studio.vercel.app/',
+    preview: { type: 'scroll', image: kilnFull, alt: 'KILN Collective website' },
   },
   {
     slug: 'medra',

@@ -53,7 +53,7 @@ export default function HomeView() {
         alt
         eyebrow="Portfolio"
         title="Products we’ve built, live in production."
-        intro="Retail, financial services, banking and AI — hover a preview to scroll through the real site."
+        intro="Retail, financial services, banking, creative studios and AI — hover a preview to scroll through the real site."
         action={<SectionLink href="/work">All work</SectionLink>}
         sx={{ scrollMarginTop: 72 }}
       >

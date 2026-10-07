@@ -12,7 +12,7 @@ export default function WorkView() {
       <PageHeader
         eyebrow="Work"
         title="Built, shipped and running in production."
-        intro="Products across retail, financial services, banking and AI. Hover a preview to scroll through the live site, or filter by industry."
+        intro="Products across retail, financial services, banking, creative studios and AI. Hover a preview to scroll through the live site, or filter by industry."
       />
 
       <Section eyebrow="Portfolio" title="Projects by industry">
