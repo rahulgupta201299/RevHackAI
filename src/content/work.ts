@@ -1,6 +1,11 @@
 import arcanumBook from '@/assets/previews/arcanum.webp';
 import arcanumHall from '@/assets/previews/arcanum-hall.webp';
 import arcanumLanding from '@/assets/previews/arcanum-landing.webp';
+import emberBedroom from '@/assets/previews/ember-bedroom.webp';
+import emberEstimate from '@/assets/previews/ember-estimate.webp';
+import emberHero from '@/assets/previews/ember-hero.webp';
+import emberKitchen from '@/assets/previews/ember-kitchen.webp';
+import emberLiving from '@/assets/previews/ember-living.webp';
 import kilnFull from '@/assets/previews/kiln-full.webp';
 import medraFull from '@/assets/previews/medra-full.webp';
 import zanaFull from '@/assets/previews/zana-full.webp';
@@ -20,6 +25,7 @@ export const projectCategories: { id: ProjectCategory | 'all'; label: string }[]
   { id: 'ecommerce', label: 'E-commerce & retail' },
   { id: 'financial', label: 'Financial services' },
   { id: 'banking', label: 'Banking' },
+  { id: 'interiors', label: 'Interiors & real estate' },
   { id: 'creative', label: 'Arts & creative' },
   { id: 'media', label: 'Books, media & AI' },
 ];
@@ -64,6 +70,52 @@ export const projects: Project[] = [
           image: arcanumBook,
           caption: 'Book preview & recommendations',
           alt: 'Arcanum book preview with similar-book recommendations',
+        },
+      ],
+    },
+  },
+  {
+    slug: 'ember-oak',
+    name: 'Ember & Oak Interiors',
+    category: 'interiors',
+    kind: '3D home walkthrough · instant estimator',
+    badge: 'Concept build',
+    description:
+      'An interior-design website where clients walk through a lit, furnished 3D home before it’s built. Scroll room by room, switch finishes, light colour, dimming and time of day live, see the price of each piece, then get an instant budget range and book a 3D consult.',
+    deliverables: [
+      'Scroll-driven 3D walkthrough',
+      'Live finish & lighting controls',
+      'Instant cost estimator',
+      'Consult booking flow',
+    ],
+    url: 'https://interior-ember-oak.vercel.app/',
+    preview: {
+      type: 'slides',
+      slides: [
+        {
+          image: emberHero,
+          caption: 'The whole home in 3D',
+          alt: 'Ember & Oak 3D cut-away of a furnished home',
+        },
+        {
+          image: emberLiving,
+          caption: 'Living room walkthrough',
+          alt: 'Ember & Oak living room in the 3D walkthrough with finish and lighting controls',
+        },
+        {
+          image: emberKitchen,
+          caption: 'Kitchen & dining',
+          alt: 'Ember & Oak kitchen island in the 3D walkthrough',
+        },
+        {
+          image: emberBedroom,
+          caption: 'Primary bedroom',
+          alt: 'Ember & Oak bedroom in the 3D walkthrough',
+        },
+        {
+          image: emberEstimate,
+          caption: 'Instant estimate',
+          alt: 'Ember & Oak instant home-interior cost estimator',
         },
       ],
     },

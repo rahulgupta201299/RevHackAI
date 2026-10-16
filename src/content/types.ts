@@ -82,7 +82,8 @@ export interface SeniorCard {
   copy: string;
 }
 
-export type ProjectCategory = 'ecommerce' | 'financial' | 'banking' | 'creative' | 'media';
+export type ProjectCategory =
+  'ecommerce' | 'financial' | 'banking' | 'interiors' | 'creative' | 'media';
 
 export type ProjectPreview =
   /** A tall full-page screenshot that scrolls inside a browser frame. */
