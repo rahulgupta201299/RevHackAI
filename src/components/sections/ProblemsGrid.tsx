@@ -16,7 +16,7 @@ export default function ProblemsGrid({ items = problems }) {
     <CardGrid component="ul" columns={{ xs: 1, sm: 2, lg: 4 }} gap={2.5}>
       {items.map((item, index) => (
         <Reveal as="li" key={item.pain} delay={index * 0.07} sx={{ height: '100%' }}>
-          <Tilt3D sx={{ borderRadius: '24px' }}>
+          <Tilt3D sx={{ borderRadius: '8px' }}>
             <SurfaceCard
               component="article"
               sx={{
@@ -33,7 +33,7 @@ export default function ProblemsGrid({ items = problems }) {
                   inset: 0,
                   borderRadius: 'inherit',
                   background:
-                    'radial-gradient(120% 60% at 0% 0%, rgba(255, 106, 43, 0.10), transparent 60%)',
+                    'linear-gradient(135deg, var(--mui-palette-accent-soft), transparent 60%)',
                   pointerEvents: 'none',
                 },
               }}

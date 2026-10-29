@@ -24,22 +24,11 @@ export default function CtaBanner({
             position: 'relative',
             overflow: 'hidden',
             isolation: 'isolate',
-            borderRadius: 7,
+            borderRadius: 1,
             px: { xs: 3, sm: 5, md: 8 },
             py: { xs: 6, md: 9 },
             bgcolor: 'inverse.bg',
             color: 'inverse.text',
-            '&::after': {
-              content: '""',
-              position: 'absolute',
-              zIndex: -1,
-              width: 420,
-              height: 420,
-              right: -120,
-              top: -160,
-              borderRadius: '50%',
-              background: 'radial-gradient(circle, rgba(255, 106, 43, 0.45), transparent 65%)',
-            },
           }}
         >
           <Cube3D

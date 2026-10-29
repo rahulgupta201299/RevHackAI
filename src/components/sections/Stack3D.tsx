@@ -17,7 +17,7 @@ import { stackLayers } from '../../content/profile';
 import { fonts } from '../../theme';
 import Reveal from '../ui/Reveal';
 
-const colors = ['#ff6a2b', '#ff9a3d', '#4ade80', '#7aa2ff', '#c4a5ff'];
+const colors = ['#D5851F', '#87A96B', '#007BA7', '#FF2D95', '#5A3E2B'];
 
 /** One translucent plate of the isometric stack. */
 interface PlateProps {
@@ -182,15 +182,6 @@ export default function Stack3D({ layers = stackLayers }) {
           overflow: 'hidden',
         }}
       >
-        <Box
-          sx={{
-            position: 'absolute',
-            inset: '20%',
-            borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(122, 162, 255, 0.25), transparent 65%)',
-            filter: 'blur(30px)',
-          }}
-        />
         <Box
           component={m.div}
           style={{ rotateX: 58, rotateZ: spin }}

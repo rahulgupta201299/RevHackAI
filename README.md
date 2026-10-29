@@ -25,7 +25,7 @@ src/
     sections/          Page sections (Hero, Stack3D, ResultsHighlight, …)
     ui/                Building blocks (Section, Reveal, Tilt3D, SurfaceCard, …)
     layout/            Header, Footer, SiteShell, ThemeToggle
-    three/HeroScene    WebGL hero (loaded client-side only, after first paint)
+   three/HumanPortrait WebGL hero portrait (loaded client-side only)
     seo/JsonLd         Structured-data <script> renderer
   content/             All copy and data (typed in content/types.ts)
   lib/seo.ts           Site-wide SEO defaults, per-page metadata helper, JSON-LD builders

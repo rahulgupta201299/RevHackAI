@@ -9,7 +9,7 @@ export const hero = {
   title: 'Build and launch your product —',
   accent: 'without hiring a tech team.',
   intro:
-    'RevHack AI designs, builds and deploys web apps, online stores, dashboards and AI automations for founders and growing businesses. Led by a senior engineer from fintech and banking — one accountable partner from the first call to a live product on AWS.',
+    'Senior-led engineering for web apps, online stores, dashboards and AI automation. From the first conversation to a live product on AWS, we build for founders and growing businesses.',
   assurances: ['Free scoping call & estimate', 'You own the code', 'Weekly demos'],
 };
 

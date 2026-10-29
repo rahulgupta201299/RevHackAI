@@ -145,16 +145,6 @@ export default function SeniorLed({ cards = seniorCards }) {
         }}
       >
         <Box
-          aria-hidden="true"
-          sx={{
-            position: 'absolute',
-            inset: '15% 10%',
-            borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(255, 106, 43, 0.28), transparent 65%)',
-            filter: 'blur(30px)',
-          }}
-        />
-        <Box
           component={m.div}
           style={{ rotateX, rotateY }}
           sx={{

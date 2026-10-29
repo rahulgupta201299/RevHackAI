@@ -65,7 +65,7 @@ export default function Cube3D({ size = 180, sx }: { size?: number; sx?: Sx }) {
           animation: `${spin} 18s linear infinite`,
         }}
       >
-        <Faces size={size} color="#ff8a57" fill="rgba(255, 106, 43, 0.06)" />
+        <Faces size={size} color="#FF2D95" fill="rgba(255, 45, 149, 0.06)" />
         <Box
           sx={{
             position: 'absolute',
@@ -77,7 +77,7 @@ export default function Cube3D({ size = 180, sx }: { size?: number; sx?: Sx }) {
             animation: `${spinInner} 9s linear infinite`,
           }}
         >
-          <Faces size={inner} color="#7aa2ff" fill="rgba(122, 162, 255, 0.22)" />
+          <Faces size={inner} color="#007BA7" fill="rgba(0, 123, 167, 0.22)" />
         </Box>
       </Box>
     </Box>

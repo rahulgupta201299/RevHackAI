@@ -27,7 +27,7 @@ export default function ProcessSteps({ steps = process }) {
               sx={{
                 height: '100%',
                 transformOrigin: '0 50%',
-                background: 'linear-gradient(90deg, #ff4d08, #ff9a3d)',
+                background: 'linear-gradient(90deg, var(--mui-palette-chart-secondary), var(--mui-palette-secondary-main))',
               }}
             />
           </Box>
@@ -46,7 +46,7 @@ export default function ProcessSteps({ steps = process }) {
               height: 12,
               borderRadius: '50%',
               bgcolor: 'secondary.main',
-              boxShadow: '0 0 0 4px rgba(255, 106, 43, 0.18)',
+              boxShadow: '0 0 0 4px var(--mui-palette-accent-soft)',
             }}
           />
           <Typography variant="mono" sx={{ color: 'accent.text', fontWeight: 600 }}>

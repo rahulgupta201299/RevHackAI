@@ -26,34 +26,34 @@ export const shadows = {
 };
 
 const lightPalette = {
-  primary: { main: '#111113', contrastText: '#fafaf7' },
-  secondary: { main: '#ff4d08', dark: '#e0430a', contrastText: '#111113' },
-  success: { main: '#15803d' },
-  background: { default: '#fafaf7', paper: '#ffffff' },
-  text: { primary: '#111113', secondary: '#55555c' },
-  divider: '#e4e2dc',
-  accent: { text: '#c2410c', soft: '#fff0e8' },
-  surface: { alt: '#f3f2ee', muted: '#f3f2ee' },
-  line: { strong: '#cfccc4', grid: 'rgba(17, 17, 19, 0.06)' },
-  inverse: { bg: '#111113', text: '#fafaf7', muted: '#b4b4bb' },
-  chart: { primary: '#ff4d08', secondary: '#2563eb' },
+  primary: { main: '#5A3E2B', contrastText: '#ffffff' },
+  secondary: { main: '#D5851F', dark: '#a66313', contrastText: '#1e180f' },
+  success: { main: '#5d7c47' },
+  background: { default: '#f3f5ed', paper: '#fffefa' },
+  text: { primary: '#302920', secondary: '#554e43' },
+  divider: '#d1ddc8',
+  accent: { text: '#80500f', soft: '#f4e8d2' },
+  surface: { alt: '#e3ecdc', muted: '#dce8d4' },
+  line: { strong: '#a7b99b', grid: 'rgba(90, 62, 43, 0.07)' },
+  inverse: { bg: '#302920', text: '#f5f7f1', muted: '#d3d8ca' },
+  chart: { primary: '#D5851F', secondary: '#87A96B' },
   // Categorical series (validated for colour-vision deficiency), fixed order: blue, orange, aqua.
   series: { one: '#2a78d6', two: '#eb6834', three: '#1baf7a' },
   shadow: { soft: 'rgba(17, 17, 19, 0.05)', strong: 'rgba(17, 17, 19, 0.25)' },
 };
 
 const darkPalette = {
-  primary: { main: '#f2f1ee', contrastText: '#0b0b0d' },
-  secondary: { main: '#ff6a2b', dark: '#ff824d', contrastText: '#111113' },
+  primary: { main: '#f4f4f2', contrastText: '#0A0A0A' },
+  secondary: { main: '#FF2D95', dark: '#d71c78', contrastText: '#0A0A0A' },
   success: { main: '#4ade80' },
-  background: { default: '#0b0b0d', paper: '#141417' },
-  text: { primary: '#f2f1ee', secondary: '#a3a3ab' },
-  divider: '#2a2a30',
-  accent: { text: '#ff8a57', soft: 'rgba(255, 106, 43, 0.12)' },
-  surface: { alt: '#111114', muted: '#1b1b1f' },
-  line: { strong: '#3a3a42', grid: 'rgba(255, 255, 255, 0.05)' },
-  inverse: { bg: '#f2f1ee', text: '#111113', muted: '#4b4b52' },
-  chart: { primary: '#ff6a2b', secondary: '#7aa2ff' },
+  background: { default: '#0A0A0A', paper: '#151719' },
+  text: { primary: '#f4f4f2', secondary: '#aaaeb0' },
+  divider: '#30363a',
+  accent: { text: '#ff75b8', soft: 'rgba(255, 45, 149, 0.12)' },
+  surface: { alt: '#101719', muted: '#1c2528' },
+  line: { strong: '#435159', grid: 'rgba(0, 123, 167, 0.12)' },
+  inverse: { bg: '#f4f4f2', text: '#0A0A0A', muted: '#4b5559' },
+  chart: { primary: '#FF2D95', secondary: '#007BA7' },
   series: { one: '#3987e5', two: '#d95926', three: '#199e70' },
   shadow: { soft: 'rgba(0, 0, 0, 0.4)', strong: 'rgba(0, 0, 0, 0.7)' },
 };
@@ -72,7 +72,7 @@ const theme = createTheme({
     light: { palette: lightPalette },
     dark: { palette: darkPalette },
   },
-  shape: { borderRadius: 12 },
+  shape: { borderRadius: 8 },
   typography: {
     fontFamily: fonts.body,
     h1: {
@@ -168,7 +168,7 @@ const theme = createTheme({
       defaultProps: { variant: 'outlined' },
       styleOverrides: {
         root: ({ theme }) => ({
-          borderRadius: 24,
+          borderRadius: 8,
           borderColor: theme.vars.palette.divider,
           backgroundImage: 'none',
           boxShadow: shadows.sm(theme),

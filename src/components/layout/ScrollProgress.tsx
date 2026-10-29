@@ -21,7 +21,8 @@ export default function ScrollProgress() {
         height: 3,
         zIndex: (t) => t.zIndex.appBar + 1,
         transformOrigin: '0 50%',
-        background: 'linear-gradient(90deg, #ff4d08, #ff9a3d 60%, #7aa2ff)',
+        background:
+          'linear-gradient(90deg, var(--mui-palette-chart-secondary), var(--mui-palette-secondary-main))',
         pointerEvents: 'none',
       }}
     />

@@ -78,7 +78,7 @@ export default function HomeView() {
         <CardGrid>
           {services.map((service, index) => (
             <Reveal key={service.id} delay={(index % 3) * 0.06}>
-              <Tilt3D sx={{ borderRadius: '24px' }}>
+              <Tilt3D sx={{ borderRadius: '8px' }}>
                 <ServiceCard service={service} compact />
               </Tilt3D>
             </Reveal>
